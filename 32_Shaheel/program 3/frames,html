@@ -1,0 +1,17 @@
+<html>  
+<head>  
+    <title>Frame tag</title>  
+</head> 
+	<frameset rows="20,50">
+	<frame src="frames1.html" >
+	
+	<frameset cols="30%,70%"> 
+    <frame src="fr2.html">   
+    <frame name=r src="f3.html">
+	    </frameset>
+
+<noframes>
+<p>your browser does not support any frames</p>
+	</noframes>	
+    </frameset>
+	</html>
