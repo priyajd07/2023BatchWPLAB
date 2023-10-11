@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Program 2.0</title>
+</head>
+<body bgcolor="pink">
+<h2 align="center"><font color="green">LIST OF FRUITS</font></h2>
+<table border="2">
+<tr>
+<td>Sl no:</td>
+<td>Fruits</td>
+<td>Vitamins</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Apple</td>
+<td>Vitamin C</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Orange</td>
+<td>Vitamin C</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mango</td>
+<td>Vitamin A</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Grapes</td>
+<td>Vitamin C</td>
+</tr>
+</table><br>
+<h2 align="center"><font color="green">IMAGE</font></h2><br>
+<center><img src="fruits.jpg" height="250" width="250"></center><br>
+<a href="Program2.html"</a>Go back<br>
+<br>
+<a href="tablesandcontents.html"</a>Stay
+
+</body>
+</html>
