@@ -1,0 +1,26 @@
+body {
+  background-color: lightblue;
+}
+
+h3 {
+  font-family: Cursive;
+  color: brown;
+  margin-left: 20px;
+  
+}
+
+table,th,td{
+  background-color: pink;
+  border:2px solid;
+  border-color:black;
+  font-family: Cursive;
+  font-size: 15px;
+  font-color:red;
+  
+}
+th{
+  color:green;
+}
+td{
+  color:red;
+}
