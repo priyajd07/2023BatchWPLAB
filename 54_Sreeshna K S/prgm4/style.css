@@ -1,0 +1,16 @@
+
+body {
+  background-color: silver;
+}
+h3 {
+  color: blue;
+  font-family:verdana;
+  font-size: 100%;
+}
+table, th, td {
+  border: 3px solid;
+border-color:black;
+ background-color: white;}
+th{color:blue;}
+
+
