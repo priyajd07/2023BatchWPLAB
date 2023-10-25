@@ -1,0 +1,17 @@
+
+body {background-color: powderblue;}
+h1   {color: red;}
+
+table,th,td
+{
+	border:2px solid;
+        border-color:black;
+	background-color:pink;
+	th{color:blue;}
+}
+
+h2{color:violet;}
+
+h3{color:violet;}
+
+h4{color:violet;}
