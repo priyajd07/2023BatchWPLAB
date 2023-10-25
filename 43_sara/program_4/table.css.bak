@@ -1,8 +1,0 @@
-table{
-	background-color: powderblue;
-	padding:20px;
-	}
-h2{
-		color:red;
-		background-color:skyblue;
-}
