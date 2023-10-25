@@ -1,0 +1,12 @@
+table{
+	background-color:pink;
+	}
+h2{
+	color:Violet;
+	background-color:Thistle;
+	}
+
+table td {
+	background-color:Wheat;
+	}
+
