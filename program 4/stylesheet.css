@@ -1,0 +1,14 @@
+table,th,td{
+
+border:1px solid;
+background-color:powderblue;
+}
+table th{
+font-family:arial;
+border-color:black;
+color:red;
+}
+table td{
+border-color:black;
+color:green;
+}
