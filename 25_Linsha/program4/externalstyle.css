@@ -1,0 +1,16 @@
+body{
+ background-color:silver;
+}
+h1{
+ color:black;
+}
+table{
+border-color:yellow;
+background-color:pink;
+
+}
+th{
+color:red;
+}
+td{
+color:green;
