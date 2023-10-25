@@ -1,0 +1,17 @@
+body {
+  background-color: pink;
+}
+h1 {
+  color:red;
+}
+table,th,td{
+   background-color: lavender;
+  border:2px solid;
+  border-color:black;
+}
+th{ 
+  color:blue;
+}
+td{ 
+  color:green;
+}
