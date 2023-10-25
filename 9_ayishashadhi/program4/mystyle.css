@@ -1,0 +1,28 @@
+body{
+	
+}
+h2{
+	text-align:center;
+	color:green;
+	text-decoration:underline;
+}
+table,th,td
+{
+	border:1px solid;background-color:#E0D7FF;
+}
+#heading{
+	color:#fff;
+}
+table th{
+	background-color:#ff9800;
+	color:blue;
+	font-weight:bold;
+	padding:10px;
+	
+}
+table td{
+	background-color:#ff9800;
+	color:##8f3985;
+	font-weight:bold;
+	padding:10px;
+}
