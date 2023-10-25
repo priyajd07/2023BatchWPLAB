@@ -1,0 +1,17 @@
+tables
+{
+background-color:pink;
+textt-align:center;
+
+}
+h1
+{
+text-align:center;
+color:blue;
+
+}
+body
+{
+
+background-color:yellow
+}

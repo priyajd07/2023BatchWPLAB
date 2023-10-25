@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+ol
+{
+	type:1
+}
+ul
+{
+	type:square
+}
+</style>
+<link rel="stylesheet" href="css.css">
+<title>css programme</title>
+</head>
+<body>
+<h1 align="center">MCA</h1>
+<p style="text-align:right">Master of Computer Applications (MCA) is a two-year professional post-graduate course for candidates 
+wanting to delve deeper into the world of Computer Application development with the help of learning modern programming language.</p>
+<h2>Subjects</h2>
+<ol type:1>
+<li><h2>LAB</h2></li>
+<ul>
+<li> C </li>
+<li>c++</li>
+<li>java</li>
+</ul>
+
+<li><h3>THEORY</h3></li>
+<ul>
+<li>ADS</li>
+<li>SE</li>
+<li>MFC</li>
+</ul></ol>
+<h2><center><font color="red">Tables</center></font></h2>
+<table border="2">
+<tr>
+<td colspan="2" align="center">Subjects</td>
+</tr>
+<tr>
+	<th>LAB</th>
+	<th>THEORY</th>
+	
+</tr>
+<tr>
+	<td>C</td>
+	<td>ADS</td>
+
+<tr>
+	<td>C++</td>
+	<td>SE</td>
+</tr>
+
+<tr>
+	<td>JAVA</td>
+	<td>MFC</td>
+</tr>
+</table>
+</body>
+</html>
