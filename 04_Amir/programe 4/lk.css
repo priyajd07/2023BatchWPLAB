@@ -1,0 +1,18 @@
+body {
+ background-color:CYAN;
+}
+
+ table,th,td{
+	
+	border:5px solid;
+	border-collapse:collapse;
+	text-align:center;
+ }
+ th{
+	 background-color:white;
+	 
+ }
+ td{
+	 background-color:powderblue;
+	 
+ }
