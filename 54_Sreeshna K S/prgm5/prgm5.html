@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+    body {
+      font-family: arial;
+	background-color: LightCyan;
+  }
+  
+
+ label {
+      display:inline-block;
+      margin-right: 25px;
+      margin-top: 5px;
+      font-weight: bold;
+    }
+ fieldset {
+margin-right:500px;
+      border: 1px solid #d4d4d4;
+      padding: 20px 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+  .button {
+      text-align: center;
+    }
+
+    .submit {
+      color: white;
+      background: #ee9a25;
+      padding: 9px 25px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+   .reset {
+      color: white;
+      background: #c93232;
+      padding: 9px 25px;
+      border: none;
+      border-radius: 5px;
+    }
+
+</style>
+  <h1> <center>Registration Form </h1></center>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>User Information</legend>
+  <div class="input-field">
+ <label>First Name</label>
+<select>
+<option selected>Mr</option>
+<option selected>Mrs</option>
+</select>
+  <input type="text" class="inputs" name="fname">
+</div>
+<br>
+<div class="input-field">
+ <label>Mobile no:</label>
+    <input type="text" class="mobile" name="mobile">
+<label>Email:</label>
+    <input type="email" id="email" name="email">
+</div>
+</fieldset>
+<br>
+<div class="input-field">
+<label>Address</label>
+<textarea name="Address" col="60" rows="4">
+</textarea>
+</div></label><br><br>
+<div class="input-field">
+          <label class="gender">Gender</label>
+          <input type="radio" name="gender" value="male">Male
+          <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other">Other
+    </div><br>
+
+<div class="input-field">
+ <label class="langauge">Langauge Known</label>
+          <input type="checkbox" name="English" value="english">English
+          <input type="checkbox" name="malayalam" value="malayalam">Malayalam
+ 	  <input type="checkbox" name="hindi" value="hindi">Hindi
+</div><br>
+ <div class="input-field">
+          <label class="course">COURSE</label>
+          
+          <select name="course" id="course" class="inputs">
+            <option value="0">MCA</option>
+            <option value="1">MBA</option>
+            <option value="2">BCOM</option>
+            <option value="3">MCOM</option>
+            <option value="4">BCA</option>
+            <option value="5">BBA</option>
+          </select>
+        </div>
+<br>
+<br>
+ <div class="button">
+        <button type="submit" class="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
