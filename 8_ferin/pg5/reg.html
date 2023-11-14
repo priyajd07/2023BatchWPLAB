@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>REGISTRATION FORM</title>
+<style>
+body {
+  font-family: Arial;
+  background-color:lightblue;
+}
+input{
+padding:6px;
+font-size:14px;
+border-radius:4px;
+}
+button {
+  background-color:#04AA6D;
+  color:white;
+  padding:10px 50px;
+
+}
+
+fieldset
+{
+width:800px;
+padding:50px;
+border:1px solid;
+background-color:#04AA6D;
+}
+
+ }
+h1 {
+  color: dodgerblue;
+}
+
+</style>
+</head>
+<body>
+<h1><u><center>REGISTRATION FORM</center></u></h1>
+<form>
+<fieldset>
+<legend>User information</legend>
+<br>
+<label for="fname">
+Name:</label>
+<label for="select">
+<select id="code" name="code">
+<option value="Male"> mr </option>
+<option value="Female"> mrs </option>  <input type="text"><br><br>
+<label for="telNo">Mobile:</label> <input id="telNo" name="telNo" type="tel" maxlength="10">
+<label for="email"><b> Email:</b></label>
+<input type="text" placeholder="Enter Email" name="email" id="email" required><br><br>
+</fieldset><br><br>
+<label for="address">
+Address:</label> 
+<textarea name="address"></textarea><br><br>
+Gender: <input type="radio" name="gender" id="male"> 
+<label for="male">Male</label>
+ <input type="radio" name="gender" id="female">
+ <label for="female">Female</label>
+<input type="radio" name="gender" id="other"> 
+<label for="other">other</label><br><br>
+Languages: <input type="checkbox">
+ <label for="malayalam">Malayalam</label>
+ <input type="checkbox"> <label for="english">English</label>
+ <input type="checkbox"> <label for="hindi">Hindi</label><br><br>
+<label for="select">
+Course:</label> 
+<select name="course" placeholder="course">
+<option value="course">course</option>
+<option value="sslc">SSLC</option> 
+<option value="mtech">mtech</option> 
+<option value="bca">bca</option> 
+<option value="mca">mca</option> </select> <br><br>
+<center><button type="submit">SUBMIT</button>
+<button type="reset">RESET</button></center>
+</form>
+</body>
+</html>
