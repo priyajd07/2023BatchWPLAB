@@ -1,0 +1,103 @@
+<html>
+<head><title>registration form</title></head>
+<style>
+body
+	{
+	background-color:#D291BC;
+	}
+	form
+	{
+	background-color:#E0BBE4;
+	}
+	button
+	{
+	background-color:grey;
+	}
+	fieldset{
+	color:ligthgreen;
+	margin-right:400px;}
+	
+
+
+input[type=text]:focus {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 4px;
+ background-color: lightblue;
+}
+
+
+
+
+
+
+	input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+
+<body>
+<center><h1>REGISTRATION FORM</h1></center>
+
+
+<form>
+<fieldset>
+<legend>User Information</legend>
+<label for="name">name:</label>
+<select name="Mr/Mrs" id="Mr/Mrs">
+	<option value="Mr">Mr.</option>
+	<option value="Mrs.">Mrs.</option></select>
+<input type="text"><br><br><br>
+<label>mobile:</label>
+<input type="text">
+<label>Email:</label>
+<input type="text" name="email" >
+</fieldset><br>
+
+<label>Address:</label></td>
+<textarea name="address" rows="5" cols="30"></textarea><br>
+
+<label>Gender</label>
+<input type="radio" id="gender" name="gender"/>
+<label for="male">Male</label>
+<input type="radio" id="gender"name="gender"/>
+<label for="female">Female</label>
+<input type="radio" id="gender" name="others"/>
+<label for="Others">Others</label>
+
+
+<br><br>
+<label>Language:</label>
+
+<input type="checkbox" id="language" name="Malayalam"/>
+<label for="Malayalam">Malayalam</label>
+
+<input type="checkbox" id="language" name="english"/>
+<label for="english">English</label>
+
+<input type="checkbox" id="language" name="Hindi"/>
+<td><label for="Hindi">Hindi</label>
+<br><br>
+<label>Course</label>
+<select name="Course" id="course">
+<option value="MCA">MCA</option>
+<option value="M.TECH">M.TECH</option>
+<option value="MBA">MBA</option>
+<option value="MSW">MSW</option>
+</select><br><br>
+<center>
+<input type="submit" value="submit">
+<input type="reset" value="reset"></center>
+</form>
+</body>
+</html>
