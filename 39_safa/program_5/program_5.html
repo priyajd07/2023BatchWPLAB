@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>form</title>
+</head>
+<style>
+body {
+  background-color:lightblue;
+}
+h1 {
+  color:red;
+  text-align:center;
+}
+form {
+  size:16px;
+  
+}
+label {
+display:inline-block;
+width:150px;
+}
+
+datalist {
+height:10px;
+width:10px
+}
+input[type=submit]{
+  background-color:orange;
+  color:white;
+  margin:4px 2px;
+  cursor:pointer;
+  text-align: center;
+  
+}
+input[type=reset]{
+  background-color:red;
+  color:white;
+  margin:4px 2px;
+  cursor:pointer;
+  text-align: center;
+}
+fieldset {
+margin-right:300px;
+}
+</style>
+<body>
+<h1>REGISTRATION FORM</h1>
+<form>
+<fieldset>
+  <legend>USER INFORMATION:</legend>
+  <label for="color">NAME:</label>
+   <select>
+    <option selected>MR</option>
+   <option selected>MRS.</option>   
+   </select>
+  <input type="text"><br><br>
+  <label for="text">MOBILE:</label>
+  <input type="text">
+  <label for="place">EMAIL:</label>
+  <input type="email"><br><br>
+ </fieldset>
+<br><br>
+<label for="address">ADDRESS :</label>
+<textarea name="adress"></textarea><br><br>
+<label for="language">GENDER :</label>
+<input type="radio" id="male">
+<label for="html">male</label>
+<input type="radio" id="female">
+<label for="female">female</label>
+<input type="radio" id="others">
+<label for="others">Others</label><br><br>
+<label for="qualification">LANGUAGE KNOWN :</label>
+ <input type="checkbox" >
+  <label for="10th"> English</label>
+  <input type="checkbox" >
+  <label for="plus two">Malayalam</label>
+  <input type="checkbox">
+  <label for="degree"> Hindi</label><br><br>
+<label for="hobbies">COURSE:</label>
+<select  name="course">
+  <option label="course">
+   <option value="mba">MCA</option>
+   <option value="mba">MBA</option>
+   <option value="mtech">MTECH</option>
+  </option>
+</select>
+  <br><br>
+<center><input type="submit" value="Submit">
+<input type="reset" value="Reset"></center>
+</form>
+</html>
