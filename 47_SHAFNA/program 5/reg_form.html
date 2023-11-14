@@ -1,0 +1,77 @@
+<html>
+<head>
+<title> HTML Forms </title>
+<style>
+button{
+	width: 30px;
+	height: 40px;
+	}
+
+label{
+	font-size:20px;
+	width:100px;
+	}
+body{
+background-color:pink;
+}
+fieldset{
+	width:100px;
+}
+</style>
+</head>
+
+<body>
+<h1>
+<center>
+REGISTRATION FORM
+</center><br><br>
+<form>
+<fieldset><legend>USER INFORMATION </legend>
+<label>  Name </label>
+<select name="information" id="status">
+<option value="mr">Mr.</option>
+  <option value="mrs">Mrs.</option>
+  <option value="ms">Ms.</option>
+<input type="text" ><br><br>
+<label> Mobile Number </label>
+<input type="number">
+<label>Email ID </label>
+<input type="email"><br><br><br>
+
+</fieldset><br>
+
+<label> Address </label><br>
+<textarea  rows="8" cols="50"></textarea><br>
+
+<label> Gender : </label>
+<input type="radio"  name="Gender" >
+<label for="html">Male</label>
+<input type="radio"  name="Gender" >
+<label for="css">Female</label>
+<input type="radio"  name="Gender" >
+<label for="gender">Others</label><br><br><br>
+
+
+<label> Languages known </label>
+<label for="language"> Malayalam </label>
+<input type="checkbox" value="Malayalam">
+<label for="language"> English </label>
+<input type="checkbox" value="English">
+<label for="language"> Hindi </label>
+<input type="checkbox" value="Hindi">
+<label for="language"> French </label>
+<input type="checkbox" value="French"><br><br>
+
+course:
+<select>
+<option value="default" selected></option>
+<option value="MCA">MCA</option>
+<option value="MBA">MBA</option>
+<option value="MTECH">MTECH</option>
+</select>
+<button type="submit"> Submit </button>
+<button type="reset"> Reset </button>
+</form>
+
+</body>
+</html>
