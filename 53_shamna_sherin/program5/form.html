@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>forms</title>
+<style>
+h1{
+color:red;
+text-align:center;
+}
+ label {
+    display: inline-block;
+     width: 60px;
+     text-align: left;
+      }
+input[type=text]{
+color:blue;
+width:25%;
+background-color:pink;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+}
+textarea{
+width:25%;
+height:100px;
+border:2px solid;
+color:blue;
+background-color:pink;
+}
+select {
+width: 5%;
+border:2px;
+background-color:pink;
+}
+input[type=submit],input[type=reset]{
+color:white;
+background-color:green;
+ padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=email]{
+color:blue;
+width:25%;
+background-color:pink;
+ padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=tel]{
+color:blue;
+width:25%;
+background-color:pink;
+ padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+ div {
+        margin-bottom: 10px;
+      }
+input[type="checkbox"] {
+    outline: 1px solid black;
+}
+fieldset{
+margin-right: 500px;
+}
+</style>
+<body bgcolor="powderblue">
+<h1>REGISTRATION FORM</h1>
+<form target="_blank" method="get">
+<fieldset>
+<legend>User information</legend>
+<div>
+<label for="fname">Name:</label>
+<select style="width:50px;height:45px;">
+<option selected>Mr</option>
+<option>Mrs</option>
+</select>
+<input type="text" id="fname"><br>
+</div>
+<div>
+<label for="no">phone:</label>
+<input type="tel" id="no" name="no" pattern="[0-9]{10}" maxlength="10">&nbsp;&nbsp;&nbsp;
+<label for="email">Email:</label>
+<input type="email" id="email" name="email"><br>
+</div>
+</fieldset>
+<div>
+<br>
+<label for="add">address:</label>
+<textarea name="address" id="add" rows="4" cols="30">
+</textarea><br>
+</div>
+<div>
+gender:
+<input type="radio" id="f" value="female" name="gender">
+<label for="f">female</label>
+<input type="radio" id="m" value="male" name="gender">
+<label for="m">male</label>
+<input type="radio" id="o" value="o" name="gender">
+<label for="o">others</label><br>
+</div>
+<div>
+languages known:
+<input type="checkbox" id="l2" value="english">
+<label for="l2">english</label>
+<input type="checkbox" id="l3" value="hindi">
+<label for="l3">hindi</label>
+<input type="checkbox" id="l1" value="malayalam">
+<label for="l1">malayalam</label>
+</div>
+<div>
+<label for="course">Course:</label>
+<select id="course" names="qua">
+<option value="MCA" selected>MCA</option>
+<option value="MBA">MBA</option>
+<option value="MTECH">MTECH</option>
+<option value="BTECH">BTECH</option>
+</select><br>
+</div>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</forms>
+</body>
+</html>
