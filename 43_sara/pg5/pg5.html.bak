@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>forms</title>
+<style>
+fieldset {
+   width: 500px;
+  padding: 50px;
+  border: 1px solid #4CAF50;
+}
+</style>
+</head>
+<body>
+<h1><center>REGISTRATION FORM</center>
+</h1>
+<form>
+<fieldset>
+<legend>User Information</legend>
+<br>
+<label for="f">Name</label>
+<select id="code"name="code">
+<option value="Male">mr.</option>
+<option value="Female">Mrs.</option>
+</select>
+<input type="text"name="n1"id="f">
+<br><br>
+<label for="g">Mobile</label>
+<input type="phone"name="n2"id="g">
+&nbsp&nbsp&nbsp
+<label for="h">email</label>
+<input type="email"name="n3"id="h">
+</fieldset>
+<br><br>
+<label for="i">Address</label>
+<textarea rows="4" cols="19"></textarea>
+<br><br>
+Gender
+&nbsp&nbsp&nbsp
+<input type="radio"name="gender"id="s">
+<label for="s">Male</label>
+<input type="radio"name="gender"id="w">
+<label for="w">Female</label>
+<input type="radio"name="gender"id="k">
+<label for="k">Others</label>
+<br><br>
+Languages Known
+&nbsp&nbsp&nbsp
+<input type="checkbox"name="ll"id="y">
+<label for="y">English</label>
+<input type="checkbox"name="ll"id="o">
+<label for="o">Malayalam</label>
+<input type="checkbox"name="ll"id="l">
+<label for="l">Hindi</label>
+<br><br>
+<label for="hh">Course</label>
+<select id="cc"name="cc">
+<option value="pg">MBA</option>
+<option value="pg">MCA</option>
+</select>
+<br><br>
+<center><input type="submit" name="mm" value="submit">
+<input type="reset" name="hh" value="reset"></center>
+
+</form>
+</body>
+</html>
