@@ -1,0 +1,68 @@
+<html>
+<head>
+<style>
+body{
+background-color:lavender;
+}
+.Submit{
+	margin-right:8px;
+}
+label{
+	display:inline-block;
+	width:100px;
+	text=align:left;
+}
+fieldset{
+	margin-right:700px;
+}
+</style>
+<h1><center>REGISTRATION FORM<center></h1>
+<fieldset>
+<legend>User Information</legend> 
+<form>
+  <label for="fname">Name:</label>
+ <select>
+        <option selected>Mr.</option>
+	<option selected>Mrs.</option>
+      </select>
+  <input type="text" id="fname" name="fname"><br><br>
+<label for="Phone">Mobile:</option></label>
+ <input type="tel" id="Phone" name="Phone" pattern="[0-9]{10}" maxlength="10">
+ &nbsp;<label for="Email id">Email id:</label>
+  <input type="text" id="Email id" name="Email id"/><br><br>
+</fieldset><br>
+
+<label for="Address">Address:</label>
+<label>
+  <textarea name="Address:" cols="60" rows="5">
+</textarea></label><br><br><br>
+Gender:
+  <input type="radio" id="html" name="gender" value="Male">
+  <label for="mail">Male</label>
+  <input type="radio" id="html" name="gender" value="Female">
+  <label for="mail">Female</label>
+  <input type="radio" id="html" name="gender" value="Other">
+  <label for="mail">Others</label><br><br>
+
+Language known:
+  <input type="Checkbox" id="html" name="Language known" value="Malayalam">
+  <label for="mail">English</label>
+  <input type="Checkbox" id="html" name="Language known" value="English">
+  <label for="mail">Malayalam</label>
+  <input type="Checkbox" id="html" name="Language known" value="Hindi">
+  <label for="mail">Hindi</label><br><br>
+
+<label for="country">Course:</label>
+<select id="Course" name="Course">
+  <option value="Course">Course</option>
+  <option value="CSE">CSE</option>
+  <option value="MCA">MCA</option>
+  <option value="Btech">Btech</option>
+  <option value="MBA">MBA</option>
+</select><br><br>
+
+<input type="submit" value="Submit">
+<input type="button" onclick="alert('OK!')" value="Reset"></center>
+</form>
+</head>
+</html>
