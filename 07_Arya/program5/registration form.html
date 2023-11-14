@@ -1,0 +1,74 @@
+<html>
+<head><title>form</title>
+</head>
+<style>
+body
+	{
+	background-color:pink;
+	}
+	h1
+	{
+	color:silver;
+	}
+button
+	{
+	background-color:red;
+	}
+fieldset
+	{
+	color:black;
+	margin-right:400px;
+	}
+form
+	{
+	background-color:silver;
+	}
+</style>
+<body>
+<h1><center>REGISTRATION FORM</center></h1>
+<form>
+<fieldset>
+<legend>user information</legend><br>
+  <label for="name">Name:</label>
+  <select name="name" id="name">
+   <option value="mr">Mr</option>
+   <option value="mrs">Mrs</option>
+   </select>
+  <input type="text" id="name" name="Name"><br><br>
+  <label for="phonenumber">Mobile:</label>
+  <input type="text" id="phone" name="number" maxlength="10">
+
+  <label for="email">Email:</label>
+  <input type="text" name="email"><br>
+</fieldset>
+  <label for="address">Address:</label>
+  <textarea id="Address" name="address" rows="5" cols="20"></textarea><br><br>
+
+  <label for="gender">Gender:</label>
+  <input type="radio" id="Female" name="gender" value="Female">
+  <label for="female">Female</label>
+  <input type="radio" id="Male" name="gender" value="Male">
+  <label for="Male">Male</label>
+  <input type="radio" id="Others" name="gender" value="Others">
+  <label for="Others">Others</label><br><br>
+  
+  <label for="language">Languages known:</label>
+  <input type="checkbox" name="language1" value="English">
+  <label for="language1">English</label>
+  <input type="checkbox" name="language2" value="Malayalam">
+  <label for="language2">Malayalam</label>>
+  <input type="checkbox" name="language2" value="Hindi">
+  <label for="language3">Hindi</label><br><br>
+  
+   <label for="courses">Courses:</label>
+  <select name="courses" id="courses">
+  <option value="MCA">MCA</option>
+  <option value="M.TECH">M.TECH</option>
+  <option value="B.TECH">B.TECH</option>
+  </select><br><br>
+  <center>
+  <button>SUBMIT</button>
+  <button>RESET</button>
+  </center>
+</body>
+</html>
