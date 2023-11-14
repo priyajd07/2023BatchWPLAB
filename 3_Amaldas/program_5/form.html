@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>forms</title>
+<link rel="stylesheet"  href="form.css">
+</head>
+<body>
+<h1><center>Registration Form</center></h1>
+
+<form>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+<input type="file" name="fileToUpload" id="fileToUpload">
+<input type="submit" value="Upload Image" name="submit">
+</form>
+<br>
+<label for="f">First Name</label>
+<input type="text"  name="n1" id="f"  placeholder="enter your first name">
+<br><br>
+<label for="g">Last Name</abel>
+<input type="text" name="n2"  id="g" placeholder="enter your second name">
+<br><br>
+Gender:
+<br><br>
+<label for="h">Male</label>
+<input type="radio" name="gender"  id="h">
+<label for="i">Female</label>
+<input type="radio" name="gender"  id="i">
+<label for="j">Others</label>
+<input type="radio" name="gender"  id="j">
+<br><br>
+<label for="k">Date of Birth</label>
+<input type="date"  id="k">
+<br><br>
+Adress <textarea rows="3" cols="18"></textarea>
+<br><br>
+languages known:
+<br><br>
+<input type="checkbox" name="ss"  value="ss"> English
+<br>
+<input type="checkbox" name="ss"  value="ss"> Malayalam
+<br>
+<input type="checkbox" name="ss"  value="ss"> Hindi
+<br>
+<input type="checkbox" name="ss"  value="ss"> Tamil
+<br>
+<input type="checkbox" name="ss"  value="ss"> Arabic
+<br><br>
+country code<select id="code" name="code">
+<option value="India">+91</option>
+<option value="Qatar">+974</option>
+<option value="UAE">+971</option>
+</select>
+Phone Number <input type="phone" name="n7" id="n7">
+<br><br>
+Country<select id="county" name="country">
+<option value="India">India</option>
+<option value="Qatar">Qatar</option>
+<option value="UAE">UAE</option>
+</select>
+Email<input type="email"  name="n6"  id="n6">
+<br><br>
+<label for="psw">Password</label>
+<input type="password" placeholder="Enter Password" name="psw" required>
+<label for="psw-repeat">cofirm Password</label>
+<input type="password" placeholder="comfirm Password" name="psw-repeat" required>
+<center><input type="submit" value="submit"></center>
+</form>
+</body>
+</html>

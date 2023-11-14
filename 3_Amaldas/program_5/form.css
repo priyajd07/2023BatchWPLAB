@@ -1,0 +1,15 @@
+html,
+body {
+  background-color: #CBC3E3;
+  text-align: left;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+textarea {
+	background-color: #FFFF00;
+}
+
+submit {
+	background-color:#FF0000;
+}
