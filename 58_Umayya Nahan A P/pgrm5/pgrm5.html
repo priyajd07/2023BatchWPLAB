@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>Program 6</title>
+	<style>
+		body{background:#d6dbdf;
+			padding-top: 50px;
+  			padding-right: 30px;
+  			padding-bottom: 50px;
+  			padding-left: 20px;
+		}
+		form{background:#f2f3f4;
+			padding-top: 50px;
+  			padding-right: 30px;
+  			padding-bottom: 50px;
+  			padding-left: 20px;}
+		label{
+			display:inline-block;
+			width:200px;
+			text-align:left;
+		}
+		h1{text-align:center;}
+		fieldset {
+            width: 70%;
+ 
+        }
+		.c2{ display: flex;
+  			justify-content: center;
+ 	 		align-items: center;}
+</style>
+</head>
+<body>
+	<form><h1>REGISTRATION FORM</h1>
+	<fieldset><legend>User Information </legend>
+	<label for="name">Name</label>
+		<select>
+			<option>Mr.</option>
+			<option>Mrs</option>
+			<option>Miss</option>
+		</select><input type="text" id="name" required><br><br>
+			<label for="phone class="c3">Phone</label>
+             		<input type="tel" required>  
+			<label>Email</label><input type="email" required>
+		
+	</fieldset><br><br>
+	<label for="address">Address</label>
+	<textarea id="address" required></textarea><br><br>
+	<label>Genter</label>
+        <input type="radio" name="genter" required><label>Male</label>
+        <input type="radio" name="genter"><label>Female</label>
+        <input type="radio" name="genter"><label>Other</label><br><br>
+	<label>Languages known</label>
+	<input type="checkbox" name="la" id="eng" required><label for="eng">English</label>
+	<input type="checkbox" name="la" id="mal"><label for="mal">Malayalam</label>
+	<input type="checkbox" name="la" id="hin"><label for="hin">Hindi</label><br><br>
+	<label>Course</label>
+         <select required>
+		<option>Course</option>
+                <option>MCA</option>
+                <option>MBA</option>
+                <option>B.Arch</option>
+                <option>B.Tec in AI/DS</option>
+                <option>B.Tec in CE</option>
+                <option>B.Tec in IT</option>
+                <option>B.Tec in EEE</option>
+        </select><br><br><div class="c2">
+	<button>Reset</button><button>Submit</button></div>
+    </form>
+</body>
+</html>
