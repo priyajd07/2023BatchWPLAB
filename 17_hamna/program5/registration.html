@@ -1,0 +1,59 @@
+<html>
+<head>
+</head>
+<style>
+label{
+	display: inline-block;
+	width:80px;
+}
+body{background-color:pink;}
+h1{color:blue; text-align:center;}
+button{
+	background-color:yellow;
+}
+form{
+	background-color:lightblue;
+}
+fieldset{
+	margin-right:600px;
+}
+</style>
+<body>
+<h1>REGISTRATION FORM</h1>
+<form>
+<fieldset>
+<legend><i>User Information</i></legend>
+<label for="name">name:</label>
+<select name="mr/mrs" id="mr/mrs">
+<option value="Mr">Mr</option>
+<option value="Mrs">Mrs</option>
+</select>
+<input type="text">
+<br><br>
+<label>Mobile : </label><input type="text"><label>Email : </label><input type="email">
+</fieldset>
+<br>
+<label>Address:</label>
+<textarea name="address" rows="5" cols="30"></textarea><br><br>
+<label>gender:</label><input type="radio" id="male" name="gender">male</input> 
+<input type="radio" id="female" name="gender">female</input>
+<input type="radio" id="others" name="gender">others</input><br><br>
+<label>languages:</label>
+<input type="checkbox" name="english">English</input>
+<input type="checkbox" name="malayalam">Malayalam</input>
+<input type="checkbox" name="hindi">Hindi</input><br><br>
+<label>Course:</label>
+<select name="course" id="course">
+<option value="MCA">MCA</option>
+<option value="MBA">MBA</option>
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+<option value="B.arch">B.arch</option>
+</select><br><br>
+<center>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</center>
+</form>
+</body>
+</html>
