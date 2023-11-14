@@ -1,0 +1,87 @@
+<html>
+<title>forms</title>
+<style>
+body {
+  background-color:bisque;
+  
+}
+
+
+label {
+        display: inline-block;
+        width: 80px;
+}
+
+h1 {
+ text-align: center;
+ color:blue;
+}
+
+ input[type=submit]  {
+  background-color: red;
+  border: none;
+  color: white;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+text-align: center;
+
+
+}
+
+input[type=reset]{
+  background-color: black;
+  border: none;
+  color: white;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+text-align: center;
+
+}
+fieldset{
+	margin-right:200px;}
+</style>
+<body>
+<h1><t>REGISTRATION FORM</h1></t>
+<fieldset>
+    <legend>User Information:</legend>		
+  <label for="name1"> Name:</label><select>
+   <option selected>Mr.</option>
+    <option selected>Mrs.</option></select>
+  <input type="text" id="name1" name="name1"></datalist>
+<br><br>
+<label for="number">Mobile:</label>
+<input type="text" id="name1" name="name1">
+  <label for="name4">Email:</label>
+  <input type="text" id="name4" name="name4"><br><br>
+  </fieldset><br><br>
+  <label for="address">Address:</label>
+  <textarea name="Address"></textarea><br><br>
+<label for="name5">Gender:</label>
+  <input type="radio" id="Male">
+  <label for="mca">Male</label>
+  <input type="radio" id=female">
+  <label for=mba">Female</label>
+  <input type="radio" id="Others">
+  <label for="cse">Others</label><br><br>
+<label for="name6">Language Known:</label>
+  <input type="checkbox" id="subject1">
+  <label for="subject1"> English</label>
+  <input type="checkbox" id="subject2">
+  <label for="subject2"> Malayalam</label>
+  <input type="checkbox" id="subject3" >
+  <label for="subject3"> Hindi</label><br><br>
+<label for="Course">Course:</label>
+  <select name="Course" id="Course">
+<option label="course">
+      <option value="bsc">BSc</option>
+      <option value="mba">MBA</option>
+<option value="mca">MCA</option>
+<option value="btech">BTECH</option>
+    </optgroup></select><br><br><br>
+<center><input type="submit" value="Submit">
+ <input type="reset" value="Reset"></center><br><br>
+</body></html>
+
+  
