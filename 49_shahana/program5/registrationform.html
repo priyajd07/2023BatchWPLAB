@@ -1,0 +1,81 @@
+<html>
+<head>
+</head>
+<style>
+h1{
+color:red; text-align:center;
+}
+body{
+background-color:gray;
+}
+label{
+    display:inline-block;
+    width:80px;
+}
+input[type]:focus{
+    width:60%
+    padding:5px 10px;
+    margin:8px 0;
+    display:inline-block;
+    border:2px solid green;
+    border-radius:4px;
+    box-sizing:border-box;
+    background-color:lightblue;
+    color:green;
+}
+textarea:focus{
+	width:60%
+    padding:5px 10px;
+    margin:8px 0;
+    display:inline-block;
+    border:2px solid green;
+    border-radius:4px;
+    box-sizing:border-box;
+    background-color:lightblue;
+    color:green;
+}
+fieldset{
+	margin-right:500px;
+}
+
+
+
+</style>
+<body>
+<center><h1>REGISTRATION FORM<h1></center>
+<form>
+<fieldset>
+<legend>User Information</legend>
+<label>Name:</label><select name="mr/mrs" id="mr/mrs">
+<option value="Mr">Mr</option>
+<option value="Mrs">Mrs</option>
+</select>
+<input type ="text">
+<br><br>
+<label>MObile : </label><input type="text"<label>Email :</label><input type="email">
+</fieldset>
+<label>Address:</label>
+<textarea name="address" rows="5" cols="30"></textarea><br><br>
+<label>Gender:</label>
+<input type="radio" id="male" name="gender">male</input>
+<input type="radio" id="female" name="gender">female</input>
+<input type="radio" id="other" name="gender">other</input><br><br>
+<label>language:</label>
+<input type="checkbox" name="English">English</input>
+<input type="checkbox" name="Malayalam">Malayalam</input>
+<input type="checkbox" name="Hindi">Hindi</input><br><br>
+<label>Course:</label>
+<select name="course" id="place">
+<option value="MCA">MCA</option>
+<option value="MBA">MBA</option>
+<option value="CSE">BA</option>
+<option value="MA">MA</option>
+<option value="BSC">BSC</option>
+</select><br><br>
+<center>
+<input type="reset" value="reset">
+<input type="submit" value="submit">
+</center>
+</form>
+</body>
+</html>
