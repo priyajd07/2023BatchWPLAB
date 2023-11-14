@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>forms</title>
+<style>
+fieldset {
+    width: 500px;
+    padding:50px;
+    border: 1px solid;
+}
+
+</style>
+<body>
+<h1><center>REGISTRATION FORM</center></h1>
+<form>
+<fieldset>
+<legend>User Information</legend>
+<br>
+<label for="fname">
+Name:</label>
+<label for="select">
+<select id="code" name="code">
+<option value="Male">mr</option>
+<option value="Female">mrs</option><br>
+<input type="text" placeholder="first name"><br><br>
+<label for="Telno.">Mobile:</label> <input type="number" id="telno." name="telno" type="tel" placeholder="+91">
+<label for="email">Email:</label>
+<input type="email" placeholder="email" id="email">
+<br><br></fieldset>
+<br><br>
+<label for="address">
+Address:</label> 
+<textarea name="address"></textarea><br><br>
+
+<label for="Gender">
+Gender:</label> 
+<input type="radio" name="gender" id="male">
+<label for="male">Male</label>
+<input type="radio" name="gender" id="female">
+<label for="female">Female</label>
+<input type="radio" name="gender" id="others">
+<label for="female">Female</label><br><br>
+
+
+Languages Known:
+<input type="checkbox">
+<label for="english">English</label>
+<input type="checkbox">
+<label for="malayalam">Malayalam</label>
+<input type="checkbox">
+<label for="hindi">Hindi</label><br><br>
+
+
+<label for="select">Course:</label>
+<select name="select">
+<option value="sslc">SSLC</option>
+<option value="+2">+2</option>
+<option value="ug">UG</option>
+<option value="pg">PG</option>
+</select>
+<br><br>
+
+<center><input type="submit" value="Submit">
+<input type="reset" value="reset"></center>
+</form> 
+
+
+
+</body>
+</html>
