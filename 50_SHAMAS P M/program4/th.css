@@ -1,0 +1,26 @@
+table, th, td {
+border: 1px solid grey;
+border-collapse: collapse;
+}
+#heading {
+color: #fff;
+}
+table th {
+background-color: #ff9800;
+color: #8F3985;
+font-weight: bold;
+padding: 20px;
+}
+table td
+{
+background-color: #000000;
+color: #8F3985;
+padding: 20px; font-weight: bold;
+}
+h1
+{
+color: blue;
+text-transform: uppercase;
+text-align: center;
+font-size: 30px;
+}
