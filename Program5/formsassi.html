@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Registration</title>
+<style>
+body {
+	background-color: #abdbe3;
+}
+h1 {
+
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff6600;
+}
+fieldset {
+  background-color: #eeeee4;
+
+  margin-left: 2px;
+  margin-right: 600px;
+
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+label
+{
+display:inline-block;
+text-transform: uppercase;
+color:#151515;
+
+
+}
+input[type=reset],
+      input[type=submit] {
+        background-color:#4C7D4E;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        margin: 4px 2px;
+        
+      }
+
+</style>
+
+</head>
+<body>
+<h1><center>Registration form</h1></center>
+<form>
+<fieldset>
+<legend>Userinformtion</legend>
+  <label for="name" ></label>
+  Name<select id="init" name="init">
+  <option value="MR">mr</option>
+  <option value="mrs">mrs</option>
+  <input type="text" id="fname" name="fname" placeholder="Enter your name"><br><br>
+  <br><br>
+  <label for="phone" ></label>
+  Phone<select id="code" name="code">
+  <option value="India">+91</option>
+  <option value="UAE">+971</option>
+  <option value="SaudiArabia">+966</option>
+<input type="tel" name="nmber"  id="phone" >
+	<label for="e-mail" >Email</label>
+   <input type="email" name="e-mail"  id="e-mail">
+   
+
+<br><br>
+  
+  </fieldset>
+  <br><br><br>
+   <label for="lname">Address</label>
+  	<textarea row="3" cols="18"></textarea><br><br>
+
+  	<p>  Gender</p>
+     
+   <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="others"> Others
+
+  <br><br>
+
+   <label for="check" >Languages known</label>&nbsp&nbsp&nbsp
+<!-- <div class="checkbox"> --->
+ 
+ <input type="checkbox"  name="language" id="english">English
+
+  <input type="checkbox"  name="language" id="hindi">Hindi
+
+ <input type="checkbox" name="language" id="arabic">Arabic
+
+<br><br><br>
+<label for="phone" ></label>
+  Course<select id="crsename" name="crsename">
+  <option value="MCA">MCA</option>
+  <option value="mtech">MTECH<option>
+  <option value="btech">BTECH</option><br><br>
+	</select>
+	<br><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+  	
+</body>
+
+
+</html>
