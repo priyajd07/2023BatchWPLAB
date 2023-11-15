@@ -1,0 +1,19 @@
+body {background-color:pink;}
+fieldset {background-color:skyblue;margin-right:300}
+h2{color:red;font-family:verdana;}
+form {background-color:skyblue;color:blue;
+	height:600px;width:600px;margin-right:auto;margin-left:auto;
+	border-top-left-radius:10px;border-top-right-radius:10px;padding:0px;}
+label{
+	height:20px;width:200px;margin-top:10px;margin-left:10px;
+	text-align:right;clear:both;}
+input{text-align:20px;}
+input[type=submit]{background-color:yellow;color:red;}
+input[type=reset]{background-color:yellow;color:red;}
+body{background-color: powderblue;}
+}
+
+fieldset {
+background-color: yellow;margin-right:300
+}
+
