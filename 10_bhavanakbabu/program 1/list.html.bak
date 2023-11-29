@@ -1,0 +1,89 @@
+<html>
+<title>second program</title>
+<h1><b><mark><u><center>Formatting Tags</center></mark></u></b></h1>
+</head>
+<body bgcolor="#33FFC7">
+<p>The development of web applications and websites that are accessed over the internet
+<b> programming languages</b></p>
+<i>languages</i>
+<strong>Html</strong>
+<big>Css</big>
+<small>Javascript</small>
+<em>Php</em>
+<INS>Formatting Tags</INS>
+<del>Basic Tags</del> <BR><BR>
+Equation of water = H <SUB>2</SUB>0<BR>
+Equation<MARK> ax<sup>2</sup>+bx+c</MARK> <br> 
+<font size ="8" colour="red">HTML</font>
+</p>
+
+
+<h3><font size="15" color="red" FACE="verdana"><center>LIST DEMOSTRATION</center></font></h3>
+</head>
+<ol>
+<li>my favorite websites.</li>
+<ol type="A">
+<Li>
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi20L_Xu8WBAxVbG4gKHWFPD7YQFnoECAkQAQ&url=https%3A%2F%2Fwww.mesce.ac.in%2F&usg=AOvVaw0asF8iG6KTrs2hzBSXvS-C&opi=89978449">
+MESCE</a>
+</li>
+<li>
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi_ta21vMWBAxVBU_UHHfW_AMMQFnoECAYQAQ&url=https%3A%2F%2Fwww.google.com%2F&usg=AOvVaw1xDfJh-YduXzT4-Mrql0P3&opi=89978449">
+Google</a></li>
+</ol>
+<li>my favorite fruit.</li>
+<ul type="square">
+<Li>
+<a href="https://images.pexels.com/photos/6609270/pexels-photo-6609270.jpeg?auto=compress&cs=tinysrgb&w=600">
+APPLE</a></li>
+<li>ORANGE</li>
+</ul>
+<center><font size ="15" color="GREEN"><U> TABLE</U></font></center>
+<H2>TIME TABLE</H2>
+<table border="4">
+<tr>
+   <th >Day/Hr</th>
+   <th>1</th>
+   <th>2</th>
+   <th>3</th>
+</tr>
+<tr>
+   <td>Mon</td>
+   <td>ADS</td>
+   <td>ASE</td>
+   <td>DFCA</td>
+</tr>
+<tr>
+   <td>Tue</td>
+   <td>MFC</td>
+   <td>DFCA</td>
+   <td>ADS</td>
+</tr>
+</table>
+<br> <br>
+<table border="5">
+<center>
+<tr>
+    <th colspan="3">Semester details</th>
+</tr>
+<tr>
+    <td>Semester</td>
+	<td colspan="2">Subjects</td>
+</tr>
+<tr>
+    <td rowspan="4">S1</td>
+	<td rowspan="2">Theory</td>
+	<td>ASE</td>
+</tr>
+<tr>
+   <td> ADS</td>
+</tr>
+<tr>
+    <td rowspan="2">Lab</td>
+	<td>WP</td>
+</tr>
+<tr>
+<td>DS</td>
+</tr>
+</center>
+ </html>
