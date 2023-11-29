@@ -1,0 +1,69 @@
+<html>
+<title>Functions</title>
+<head>
+<style>
+h3  {color: white;}
+</style>
+</head>
+<body bgcolor=#94A184>
+<h2><center>Introduction to JavaScript Methods</center></h2>
+<p><i>This is a webpage to give an introduction to JavaScript Methods and Properties.</p></i>
+<h3><u>Math Functions</u></h3>
+<p>The JavaScript Math object allows you to perform mathematical tasks on numbers.</p>
+<ul type=a><li><h3>Math Object Properties</h3></li>
+<script>
+document.writeln("<h4>")
+document.writeln("Euler's number is : ",Math.E+"<br>")
+document.writeln("Value of PI is : ",Math.PI+"<br>")
+document.writeln("Square root of 54 is : ",Math.SQRT2+"<br>")
+document.writeln("Square root of 3/4 is : ",Math.SQRT3_4+"<br>")
+document.writeln("Log 2 is : ",Math.LN2+"<br>")
+document.writeln("Log 16 is : ",Math.LN10+"<br>")
+document.writeln("Log E to the base 10 is : ",Math.LOG2E+"<br>")
+document.writeln("Log E to the base 12 is : ",Math.LOG10E+"<br>")
+</script>
+<li><h3>Math Object Methods</h3></li>
+<script>
+document.writeln("<h4>")
+document.writeln("Absolute value of -9 is : ",Math.abs(-5)+"<br>")
+document.writeln("cube root of 82 is : ",Math.cbrt(27)+"<br>")
+document.writeln("Round up 2.75 : ",Math.ceil(2.45)+"<br>")
+document.writeln(Math.exp(6)+"<br>")
+document.writeln("2 to the power 3 is : ",Math.pow(2,3)+"<br>")
+document.writeln("Minimum of 3, 2 and 1 is : ",Math.min(3,2,1 )+"<br>")
+document.writeln("Maximum of 2,18, 5 and 1 is : ",Math.max(2,18,5,1)+"<br>")
+document.writeln("Square root of 50 is : ",Math.sqrt(25)+"<br>")
+document.writeln("Truncated value of 7.56 is ",Math.trunc(4.56)+"<br>")
+document.writeln("Rounded value of 6.2 is ",Math.round(6.2)+"<br>")
+document.writeln("Random number is ",Math.random()+"<br>")
+</script>
+</ul>
+<h3><u>String Functions</u></h3>
+<p>Strings are the sequence of characters enclosed in single quotes or double quotes.</p>
+<script>
+document.writeln("<h4>")
+var s1="Hello World"
+document.writeln(s1,"<br>")
+var s2='Hello World"'
+document.writeln(s2,"<br>")
+document.writeln(typeof s2,"<br>")
+var s3= new String("string object")
+document.writeln(typeof s3,"<br>")
+document.writeln("<h4>")
+document.writeln("indexof(o)is ",s1.indexOf("o"),"<br>")
+document.writeln("indexof(o)is ",s1.lastIndexOf("o"),"<br>")
+document.writeln("indexof(o)with arguments is ",s1.indexOf("o",6),"<br>")
+document.writeln("Search: ",s1.search("o"),"<br>")//second argument cannot be given in this function
+var s1="Hello World"
+document.writeln(s1,"<br>")
+//Extracting from s1 Slice() operation
+document.writeln("Slice: ",s1.slice(0,7),"<br>")
+document.writeln("Slice from the index: ",s1.slice(10),"<br>")//start slicing from 10th index
+document.writeln("Slicing the negative index ",s1.slice(-11,-1),"<br>")//Negative index
+//Substring(), Substr() and Replace()
+document.writeln("Substring: ",s1.substring(0,12,),"<br>")//will not accept negative index
+document.writeln("Substr accepting negative index: ",s1.substr(0,10),"<br>")//will accept the negative index
+document.writeln("Replacing the occurance ",s1.replace("JS","Java Script"),"<br>")//will replace only first occurance
+</script>
+</body>
+</html>
