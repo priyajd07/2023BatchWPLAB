@@ -1,0 +1,44 @@
+<html>
+<body>
+<h2>Math Object Properties</h2>
+<script>
+document.writeln("<h4>")
+document.writeln("Euler's number is : ",Math.E+"<br>")
+document.writeln("Value of PI is : ",Math.PI+"<br>")
+document.writeln("Square root of 2 is : ",Math.SQRT2+"<br>")
+document.writeln("Square root of 1/2 is : ",Math.SQRT1_2+"<br>")
+document.writeln("Log 2 is : ",Math.LN2+"<br>")
+document.writeln("Log 10 is : ",Math.LN10+"<br>")
+document.writeln("Log E to the base 2 is : ",Math.LOG2E+"<br>")
+document.writeln("Log E to the base 10 is : ",Math.LOG10E+"<br>")
+document.writeln("integer part of 3.6 is : ",Math.trunc(3.6)+"<br>")
+document.writeln("floor value of 3.6 : ",Math.floor(3.6)+"<br>")
+document.writeln("Ceil value of 3.4 : ",Math.ceil(3.4)+"<br>")
+document.writeln("round value of 3.5 : ",Math.round(3.5)+"<br>")
+document.writeln("8 to the power 2 is  : ",Math.pow(8,2)+"<br>")
+</script>
+<h2>String object Properties</h2>
+<script>
+var s1="Welcome to JS Programming"
+document.writeln("First string:",s1,"<br>")
+var s2='Welcome to "JS Programming"'
+document.writeln("second string:",s2,"<br>")
+document.writeln("Type of second string:",typeof s2,"<br>")
+var s3= new String("string object")
+document.writeln("Type of second string after conversion:",typeof s3,"<br>")
+document.writeln("<h4>")
+document.writeln("index of first 'o' in string 1: ",s1.indexOf("o"),"<br>")
+document.writeln("index of last 'o' in string 1:",s1.lastIndexOf("o"),"<br>")
+document.writeln("indexof(o)with arguments is ",s1.indexOf("o",6),"<br>")
+document.writeln("index position of 'm' using search: ",s1.search("m"),"<br>")//second argument cannot be given in this function
+document.writeln("Slice(0 to 7) :",s1.slice(0,7),"<br>")
+document.writeln("Substring of string1 from index positon 0-12: ",s1.substring(0,12,),"<br>")
+document.writeln("replace js with javascript: ",s1.replace("JS","Java Script"),"<br>")
+document.writeln("convert to uppercase: ",s1.toUpperCase(),"<br>")
+document.writeln("convert to lower case: ",s1.toLowerCase(),"<br>")
+var s5=" Hello ";
+document.writeln("new string after merging two strings:",s5.concat(s1),"<br>")
+document.writeln("char at index 3: ",s1.charAt(3),"<br>")
+</script>
+</body>
+</html>
