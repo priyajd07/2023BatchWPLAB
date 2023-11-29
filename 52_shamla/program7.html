@@ -1,12 +1,26 @@
 <html>
-<body>
-<h1>BACKGROUNDCOLOR</h1>
+<head>
 <script>
-function clickevent(){
-document.body.style.backgroundColor="purple";
+function myFun()
+{
+var r=Math.floor(Math.random()*256);
+var g=Math.floor(Math.random()*256);
+var b=Math.floor(Math.random()*256);
+document.body.style.backgroundColor="rgb("+r+","+g+","+b+")";
 }
 </script>
-<form>
-<font align="center"><input type="button" onclick="clickevent()" value="change background color">
-</form>
-</body></html>
+<style>
+button
+{
+position: absolute;
+top: 45%;
+left: 45%;
+padding: 15px;
+font-size: 15px;
+}
+</style>
+</head>
+<body>
+<button onclick="myFun()">Change Color</button>
+</body>
+</html>
