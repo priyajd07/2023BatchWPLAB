@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function color()
+{
+var r=Math.floor(Math.random()*256);
+var g=Math.floor(Math.random()*256); 
+var b=Math.floor(Math.random()*256);
+document.body.style.backgroundColor="rgb("+b+","+r+","+g+")";
+}
+</script>
+<style>
+button{
+  background-color: #42a4f5; 
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top:25%;
+}
+button {padding: 12px 28px;}
+</style>
+</head>
+<body>
+<center><button onclick="color()">Change Color</button></center>
+</body>
+</html>
