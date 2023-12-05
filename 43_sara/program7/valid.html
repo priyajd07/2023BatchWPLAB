@@ -1,0 +1,87 @@
+<html>
+<head>
+   
+    <title>Form Validation</title>
+</head>
+<style>
+ 
+    h2{
+        text-align: center;
+        margin-top: 2em;
+        /*background-color:#34eb5e;*/
+        color: black;
+    }
+</style>
+<body>
+    <h2>FORM VALIDATION</h2>
+
+    <form name="form" action=""  onsubmit="return validateForm()">
+       
+                Name
+                <input type="text" name="fname">
+            <br><br>
+                Email
+              <input type="email" name="email">
+           <br><br>
+           
+               Mob NO
+                <input type="tel" name="mob">
+            <br><br>
+               
+         
+                Password
+              <input type="password" name="passcode">
+           
+               <br><br>
+                <input type="submit" class="center" value="submit"></th>
+           
+    </form>
+   
+
+    <script>
+      function validateForm() {
+            var fname = document.form.fname.value;
+            var mob = document.form.mob.value;
+            var email = document.form.email.value;
+
+            if (fname == "") {
+                alert("Enter Your Name ");
+                document.form.fname.focus();
+                return false;
+            }
+            else if(!(isNaN(fname))){
+                alert("Enter Valid Name ");
+                document.form.fname.focus();
+                return false;
+            }
+
+            if (mob == "") {
+                alert("Enter Mobile number");
+                return false;
+            }
+            else if (isNaN(mob)) {
+                alert("Enter valid Mobile number");
+                return false;
+            }
+            else if (mob.length != 10) {
+                alert("Enter Mobile number with 10 digit");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Enter email");
+                document.form.user.focus();
+                return false;
+            }
+            else if(!isNaN(email)){
+                alert("Enter Valid email ");
+                document.form.fname.focus();
+                return false;
+            }
+
+           
+    }
+    </script>
+</body>
+
+</html>
