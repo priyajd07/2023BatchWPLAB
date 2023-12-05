@@ -1,0 +1,76 @@
+<html>
+<head>
+<style>
+body {
+	background-color: #ff0000;
+}
+h1 {
+
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+fieldset {
+  background-color: #ffffff;
+
+  margin-left: 2px;
+  /* margin-right: 400px; */
+
+}
+
+legend {
+  background-color: gray;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+label
+{
+display:inline-block;
+text-transform: uppercase;
+color:#000000;
+
+
+}
+input[type=reset],
+      input[type=submit] {
+        background-color: #0004ff;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        margin: 4px 2px;
+        
+      }
+</style>
+
+
+
+</head>
+<body>
+<center><h1><u><b>REGISTRATION FORM</h1></b></u></center>
+<center>
+<form name="form" action="" method="POST" onsubmit="return validateForm()">
+<fieldset>
+<legend>User Information</legend>
+<label for="user">Name:</label>
+<select id="qual">
+   <option value="MR">mr</option>
+   <option value="Mrs">mrs</option>
+</select>
+<input type="text" id="name" name="fname"><br><br>
+<label for="phone">Mobile:</label>
+<input type="text" id="phone" name="mob" maxlength=10>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email"><br><br>
+</fieldset><br><br>
+ <input type="reset" value="Reset">
+  <input type="submit" value="Submit">
+</center>
+</form>
+<script src="valid.js"></script>
+</body>
+</html>
