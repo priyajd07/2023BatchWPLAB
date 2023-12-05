@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>form</title>
+<link rel="stylesheet" href="f1.css">
+</head>
+<body>
+<fieldset>
+<h1><center>REGISTRATION FORM</center></h1>
+<form>
+
+<div class="form-control">
+                <label class="header">Profile Photo:</label>
+                
+                <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+            </div>
+ <label for="firstname">First Name: </label>
+ <br>  
+ <br>
+              <input type="text" id="firstname" name="firstname"/>
+			  <br>  
+			  <br>
+   <label for="lastname">Last Name: </label> 
+<br>
+<Br>   
+              <input type="text" id="lastname" name="lastname"/> 
+			  <br><br>  
+Gender:
+<label for="gender">Gender: </label>  
+              <input type="radio" id="gender" name="gender" value="male"/>Male  
+              <input type="radio" id="gender" name="gender" value="female"/>Female
+			  <br>  
+<br>
+<br>
+Date Of Birth:<input type="date" required>
+<br>
+<br>
+<br>
+Address:<textarea rows="3" cols="18" placeholder="enter your adress" required></textarea>
+<br><br><br>
+language known:
+<br>
+<br>  
+              <input type="checkbox" id="english" name="english" value="english"/>  
+                 <label for="english">english</label> <br>  
+              <input type="checkbox" id="hindi" name="hindi" value="hindi"/>  
+                 <label for="hindi">hindi</label> <br>  
+              <input type="checkbox" id="malayalam" name="malayalam" value="malayalam"/>  
+                 <label for="malayalam">malayalam</label>  
+<br>
+<br>
+<Br>
+country code<select id="country" name="country">
+<option value="india">+91</option>
+<option value="qatar">+62</option>
+<option value="japan">+33</option>
+<option value="china">+1</option>
+Phone Number:<input type="phone" name="n8" id="n8" placeholder="enter your phone number" required>
+<br><br><br>
+select country<select id="country" name="country" required >
+<option value="india">india</option>
+<option value="qatar">qatar</option>
+<option value="japan">japan</option>
+<option value="china">china</option>
+</select>
+<br>
+<br>
+<br>
+ <label for="email">Email: </label>  
+              <input type="email" id="email" name="email"/> <br> 
+<br>
+  <label for="password">Password: </label>  
+              <input type="password" id="password" name="password" required /> 
+			  <br>  <br>  
+			  </fieldset>
+			  <br>
+			  <br>
+			  <br>
+<center><input type="submit" value="submit"></center>
+
+</form>
+</body>
+</html>
