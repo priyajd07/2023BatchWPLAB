@@ -1,0 +1,85 @@
+<html >
+<head>
+<title>Form Validation</title>
+</head>
+<style>
+    h2{
+        text-align: center;
+        color: black;
+    }
+</style>
+<body bgcolor="lightblue" align="center">
+<h2>FORM VALIDATION</h2>
+ <fieldset align="center" width="45%",height="68%">
+
+<form name="form" action="" method="POST" onsubmit="return validateForm()">
+Name
+&nbsp &nbsp &nbsp
+<input type="text" name="fname">
+<br><br>
+Email 
+&nbsp &nbsp &nbsp
+<input type="email" name="email"> 
+<br><br>
+Mob NO
+&nbsp
+<input type="tel" name="mob"> 
+<br><br>
+ Password 
+&nbsp
+ <input type="password" name="passcode"> 
+<br><center>
+&nbsp
+&nbsp
+<br><br>
+
+<input type="submit" value="submit">
+</center>
+ </form>
+ </fieldset>
+<script>
+        function validateForm() {
+            var fname = document.form.fname.value;
+            var mob = document.form.mob.value;
+            var passcode = document.form.passcode.value;
+            var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+            var ren = /[0-9!@#$%^&*]/
+
+            if (fname == "") {
+                alert("Enter First Name !!");
+                document.form.fname.focus();
+                return false;
+            }
+            else if(ren.test(fname)){
+                alert("Enter Valid Name !!");
+                document.form.fname.focus();
+                return false;
+            }
+
+            if (mob == "") {
+                alert("Enter Mobile number");
+                return false;
+            }
+            else if (isNaN(mob)) {
+                alert("Enter valid Mobile number");
+                return false;
+            }
+            else if (mob.length != 10) {
+                alert("Enter Mobile number with 10 digit");
+                return false;
+            }
+
+            if (passcode == "" || passcode.length < 8 ) {
+                alert("Enter minimum 8 digit Password !!" + '\n' + "Atleast one Lowercase & uppercase & digti & special charecter must be included");
+                document.form.passcode.focus();
+                
+            }
+	    else{
+			alert("registration completed");
+			return true;	
+		}
+
+        }
+</script>
+</body>
+</html>

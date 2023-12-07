@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>changing image and text</title>
+
+<style>
+img{
+max-width=100%;
+max-height=100%;
+height:auto;
+
+}
+p1{
+font-size:20px;
+
+}
+</style>
+<script>
+function over()
+{
+	document.getElementById("img").src="app.jpg";
+	document.getElementById("p1").innerHTML="onmouseover";
+	document.getElementById("p1").Style.color="red";
+
+}
+
+function out()
+{
+	document.getElementById("img").src="img_43.jpg";
+	document.getElementById("p1").innerHTML="onmouseout";
+	document.getElementById("p1").Style.color="green";
+
+}
+
+</script>
+</head>
+<body  align="center">
+<img src="img_32.jpg" id="img" onmouseover="over()" onmouseout="out()">
+<b><p id="p1"> </p></b>
+</body>
+
+</html>
