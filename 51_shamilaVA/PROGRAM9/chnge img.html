@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Changing Background Image</title>
+<style>
+img
+{
+max-width:100%;
+border:2px solid green;
+borde-radius:50%;
+padding:5px;
+height:auto;
+}
+p1{
+position:relative;
+top:950;
+left:630;
+font_size:20px;
+}
+</style>
+<script>
+function one()
+{
+document.getElementById("img").src="flower7.jpg";
+document.getElementById("p1").innerHTML="onmouseover";
+document.getElementById("p1").style.color="voilet";
+}
+function two()
+{
+document.getElementById("img").src="flower6.jpg";
+document.getElementById("p1").innerHTML="onmouseout";
+document.getElementById("p1").style.color="red";
+}
+</script>
+</head>
+<body>
+<img src=""flower6.jpg" id="img" onmouseover="one()"  onmouseout="two()">
+<b><p id="p1"></p></b>
+</body>
+</html>
