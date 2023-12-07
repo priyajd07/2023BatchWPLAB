@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>js</title>
+<style>
+body {
+ background-color:#a3a2;
+}
+
+ h1.jr{
+ 
+ text-decoration: underline;
+ font-size:30;
+
+ }
+ img{
+	
+	border:3px solid blue;
+	border-radius:50%;
+	padding:2px; 
+ }
+</style>
+</head>
+ 
+	<body>
+	<script>
+		function imgnew(img)
+		{
+			img.src = "real.png";
+			document.getElementById("p1").innerHTML="HALA MADRID";
+    	}
+		function imgold(img)
+		{
+			img.src = "apple.JPG";
+			document.getElementById("p1").innerHTML="RED APPLE";		
+    	}
+
+	</script>
+		<CENTER><h1 class="jr">MOUSE OVER</h1></CENTER><br>
+		<br><center>
+			<img id="im" src="apple.JPG" onmouseover="imgnew(this)" onmouseout="imgold(this)" >	
+			<P id="p1">RED APPLE</P>
+	</body>
+
+</html>
