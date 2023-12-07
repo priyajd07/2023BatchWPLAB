@@ -1,0 +1,56 @@
+body {
+ background-color:#a3a3c2;
+}
+
+
+label{
+	display:inline-block;
+	width:150px;
+	text-align:left;
+}
+
+
+button.d {
+  width :8%;
+  background-color:#007F6C; 
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius:40px;
+  font-size: 16px;
+  
+  position: relative;
+  top:150;
+  
+}
+button.s {
+	width :8%;
+  background-color:#007F6C; 
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+   border-radius:40px;
+  font-size: 16px;
+  position: relative;
+  top:150;
+  
+}
+
+ h1.jr{
+ color:red;
+ text-decoration: underline;
+ font-size:30;
+
+ }
+
+fieldset {
+  background-color: #eeeeee;
+  position: absolute;
+	left:3px ;
+}
+
+
+ *{
+	 color:#7F0023;
+ }
+		 
