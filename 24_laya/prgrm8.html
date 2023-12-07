@@ -1,0 +1,65 @@
+<html>
+<body> 
+<br><center>REGISTRATION FORM</center></br> 
+<form name="myform"  method="post" action="pgrm8valid.html" onsubmit="return validateform()" >  
+<center>
+Name    :      <input type="text" name="name"><br> <br>
+mobile  :      <input type="phone" name="mobile"><br> <br>
+Password:      <input type="password" name="password"><br><br>  
+<input type="submit" value="register">  
+</center>
+</form>  
+<script>  
+function validateform()
+{  
+var name=document.myform.name.value;  
+var mobile=document.myform.mobile.value;
+var password=document.myform.password.value;  
+
+if(name==null || name=="")
+{  
+  alert("enter the name");  
+  return false;  
+}
+else if(!isNaN(name))
+{
+alert("numbers are not allowed");
+return false;
+}
+
+else if( password==null || password=="")
+{
+alert("please fill the password");
+return false;
+}
+else if(password.length<6)
+{  
+ alert("Password must be at least 6 characters long.");  
+ return false;  
+ }
+else if(mobile=="null" || mobile=="")
+{
+alert("please enter the mobile number");
+return false;
+}
+else if((mobile.length<10) || (mobile.length>10))
+{
+alert("mobile numberis not valid.");
+return false;
+}
+else if(isNaN(mobile))
+{
+alert("please enter integer value for mobile number");
+return false;
+}
+else
+{
+//alert("valid user");
+return true;
+}
+}  
+</script>  
+</body>
+</html>
+
+ 
