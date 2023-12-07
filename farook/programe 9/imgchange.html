@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Changing image and text</title>
+<style>
+img{
+max-width:45%;
+border:2px solid black;
+border-radius:15%;
+padding:5px;
+height:auto;
+}
+p1{
+position:relative;
+top:950;
+left:630;
+font-size:20%;
+}
+</style>
+<script>
+function one()
+{
+document.getElementById("img").src="img1.png";
+document.getElementById("p1").innerHTML= "onmouseover";
+document.getElementById("p1").style.color= "darkgreen";
+}
+function two()
+{
+document.getElementById("img").src="img4.png";
+document.getElementById("p1").innerHTML= "onmouseout";
+document.getElementById("p1").style.color= "red";
+}
+</script>
+</head>
+<body bgcolor="lightyellow">
+<center><img src="img2.jpg" id = "img" onmouseover="one()" onmouseout="two()">
+<b> <p id = "p1"></p></b></center>
+</body>
+</html>
