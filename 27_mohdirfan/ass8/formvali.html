@@ -1,0 +1,100 @@
+<html>
+<head>
+<link rel="stylesheet" href="s2.css">
+<title>Forms</title>
+</head>
+ 
+	<body>
+		<CENTER><h1 class="jr">REGISTRATION FORM</h1></CENTER>
+		<center><h1 class="jr"></h1></center><br>
+		
+		<form name="reg" onsubmit="return val()" method="POST" >
+		
+		<fieldset>
+		<legend>USER INFORMATION</legend>
+		
+		<label for="name">NAME:</label>
+		<input type="text" id="name" name="name" placeholder="NM"><br><br>
+		
+		<label for="PH">PHONE NUMBER:</label>
+		<input type="tel"  id="PHONE" name="PHONE" ><br><br>
+		
+		<label for="password">PASSWORD:</label>
+		<input type="password" id="password" name="password" placeholder="password"><br>
+		
+		</fieldset>
+		<br>
+			
+		<CENTER>
+		<button class="s" type="Submit" value="Submit"><h4>submit</h1></button>
+		<button class="d" type="reset" value="reset"><h4>Reset</h1></button>
+		</center>
+		
+		</form>
+		<script>
+				function val()
+				{
+					var a=document.reg.name.value;
+					var b=document.reg.PHONE.value;
+					var c=document.reg.password.value;
+					var ch=/[0-9]/;
+					
+					if(a=="")
+					{
+						 alert("NAME SHOULD BE FILLED");
+						 document.reg.name.focus();
+						return false;
+					}
+					else if(!(isNaN(a)))
+					{
+						alert("FOUND NUMBER IN NAME ");
+						document.reg.name.focus();
+						return false;
+					}
+					
+					 if(b=="")
+					{
+						 alert("NUMBER SHOULD BE FILLED");
+						 document.reg.PHONE.focus();
+            
+						return false;
+					}
+					else if(isNaN(b))
+					{
+						alert("ALPHABET FOUND ");
+						document.reg.PHONE.focus();
+						return false;
+					}
+					else if(b.length!=10)
+					{
+						alert("NUMBER SHOULD be 10 digits ");
+						document.reg.PHONE.focus();
+						return false;
+					}
+					
+					if(c=="")
+					{
+						 alert("PASSWORD SHOULD BE FILLED");
+						 document.reg.password.focus();
+            
+						return false;
+					}
+					else if(c.length<8)
+					{
+						alert("password length should be at least 8 ");
+						document.reg.password.focus();
+						return false;
+					}
+				}
+
+		</script>
+
+	</body>
+
+
+
+
+
+
+
+</html>
