@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome To Registraion Form</title>
+<style>
+label
+{
+	width:140px;
+	font-size:20px;
+	display:inline-block;
+	text-align:right;
+}
+input
+{
+	width:300px;
+	padding:6px;
+	font-size:14px;
+	border-radius:4px; 
+	border-color:blue;
+}
+button
+{
+	width:10%;
+	padding:6px;
+	font size:20px;
+	background-color:greenblue;
+	
+}
+</style>
+<script>
+	function validate()
+	{
+	var name=document.getElementById("nam");
+	var email=document.getElementById("pwd").value;
+	var password=document.getElementById("pno").value;
+	
+	if(name.value=="")
+	{
+		alert("Name can't be blank");
+		return false;
+	}
+	else if(!isNaN(name))
+	{
+		alert("Name required alphabets!");
+		return false;
+	}
+	else if(password=="")
+	{
+		alert("Enter a password");
+		return false;
+	}
+	else if(password.length<8")
+	{
+		alert("password required atleast 8 characters");
+		return false;
+	}
+	else if(pphone=="")
+	{
+		alert("Enter your phone number!");
+		return false;
+	}
+	else if(is NaN(phone))
+	{
+		alert("Invalid phone number");
+		return false;
+	}
+	else if(phone.length!=10)
+	{
+		alert("Not a valid phone number");
+		return false;
+	}
+	else 
+	{
+		alert("Thank you for your registration");
+		return true;
+	}
+	}
+</script>
+</head>
+<body>
+<h2>Form validation</h2>
+<form style="width:900px;position:relative;left:500;" 
+onsubmit="validate()"/>
+<label>Name</label><input type="text"placeholder="name"id="nam"><br><br>
+<label>Password</label><input type="password"id="pwd"><br><br>
+<label>Phone number</label><input type="text"placeholder="Phone number"id="pno"><br><br>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
