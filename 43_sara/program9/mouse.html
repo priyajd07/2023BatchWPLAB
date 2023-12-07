@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>changing image and text</title>
+<style>
+img{
+max-width:50%;
+border:2px solid purple;
+border-radius:50%;
+padding:5px;
+height:50%;
+}
+p1{
+position:relative;
+top:950;
+left:630;
+font-size:50px;
+}
+</style>
+<script>
+function one()
+{
+document.getElementById("img").src="pantherin.jpg";
+document.getElementById("p1").innerHTML="imageover";
+document.getElementById("p1").style.color="blue";
+}
+function two()
+{
+document.getElementById("img").src="pantherout.jpg";
+document.getElementById("p1").innerHTML="imageout";
+document.getElementById("p1").style.color="green";
+}
+</script>
+</head>
+<body>
+<img src="panther.jpg"id="img"onmouseover="one()"onmouseout="two()">
+<b>
+<p id="p1"></p>
+</b>
+</html>
