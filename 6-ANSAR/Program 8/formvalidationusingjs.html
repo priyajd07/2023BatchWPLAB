@@ -1,0 +1,119 @@
+<html>
+<head>
+   
+    <title>Form Validation</title>
+</head>
+<style>
+
+    h2{
+        text-align: center;
+        margin-top: 2em;
+        /*background-color:#34eb5e;*/
+        color: black;
+    }
+
+    form input  [type="text"],[type="tel"],[type="email"]{
+    width: 25%;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+body {
+	background-color: #e0f542;
+}
+form button
+{
+    background-color: #afa74c;
+    border-radius: 4px;
+    width:10%;
+    margin: 5px 0;
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+
+</style>
+
+<body>
+    <h2>FORM VALIDATION</h2>
+
+    <form name="form" action=""  onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Userinformation</legend>
+              <label for="name" ></label>
+              Name<select id="init" name="init">
+              <option value="MR">mr</option>
+              <option value="mrs">mrs</option>
+              <input type="text" id="fname" name="fname" placeholder="Enter your name"><br><br>
+              <br><br>
+              <label for="mob" ></label>
+              Phone<select id="code" name="code">
+              <option value="India">+91</option>
+              <option value="UAE">+971</option>
+              <option value="SaudiArabia">+966</option>
+            <input type="tel" name="mob"  id="phone" >
+                <label for="e-mail" >Email</label>
+               <input type="email" name="email"  id="e-mail">
+               
+            
+            <br><br>
+              
+              </fieldset>
+           
+               <br><br>
+                <center><button>Submit</button></center>
+           
+    </form>
+   
+
+    <script>
+      function validateForm() {
+            var fname = document.form.fname.value;
+            var mob = document.form.mob.value;
+            var email = document.form.email.value;
+
+            if (fname == "") {
+                alert("Enter Your Name ");
+                document.form.fname.focus();
+                return false;
+            }
+            else if(!(isNaN(fname))){
+                alert("Enter Valid Name ");
+                document.form.fname.focus();
+                return false;
+            }
+
+            if (mob == "") {
+                alert("Enter Mobile number");
+                return false;
+            }
+            else if (isNaN(mob)) {
+                alert("Enter valid Mobile number");
+                return false;
+            }
+            else if (mob.length != 10) {
+                alert("Enter Mobile number with 10 digit");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Enter email");
+                document.form.user.focus();
+                return false;
+            }
+            else if(!isNaN(email)){
+                alert("Enter Valid email ");
+                document.form.fname.focus();
+                return false;
+            }
+
+           
+    }
+    </script>
+</body>
+
+</html>
