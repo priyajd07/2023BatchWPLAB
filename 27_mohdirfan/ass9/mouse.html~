@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Changing image and text</title>
+<style>
+
+img{ 
+}
+
+
+p1{
+position:relative; 
+top:950;
+left:630;
+ font-size:20px;
+}
+</style>
+<script>
+function one()
+{
+document.getElementById("img").src="surya1.jpg" ; document.getElementById("p1").innerHTML= "onmouseover"; document.getElementById("p1").style.color= "violet";
+}
+function two()
+{
+document.getElementById("img").src="karthi.jpg"; document.getElementById("p1").innerHTML= "onmouseout"; document.getElementById("p1").style.color= "red";
+}
+</script>
+</head>
+<body>
+<img src="karthi.jpg" height="400"; width="600" id = "img"  onmouseover="one()" onmouseout="two()"> <b> <p id = "p1"></p></b>
+</body> </html>
