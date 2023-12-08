@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Changing image and text</title>
+<style>
+img{
+max-width:100%;
+border:2px;
+padding:5px;
+height:auto;
+}
+p1{
+position:absolute;
+top:950;
+left:630;
+font-size:20px;
+}
+</style>
+<script>
+function one()
+{
+document.getElementById("img").src="dhoni.jpeg";
+document.getElementById("p1").innerHTML= "DHONI";
+document.getElementById("p1").style.color= "violet";
+}
+function two()
+{
+document.getElementById("img").src="abd.jpeg";
+document.getElementById("p1").innerHTML= "ABD";
+document.getElementById("p1").style.color= "red";
+}
+</script>
+</head>
+<body bgcolor="#B0C4DE">
+<center>
+<img src="virat.jpeg" id = "img" onmouseover="one()" onmouseout="two()">
+<b> <p id = "p1"></p></b>
+</center>
+</body>
+</html>
