@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Welcome To Registration Form</title>
+ <style>
+    body {
+      font-family: arial;
+	background-color:lavender;
+  }
+h2 {
+	
+	color: brown;
+}
+  
+
+ label {
+      display:inline-block;
+      margin-right: 15px;
+      width:140px;
+      font-size:20px;
+      margin-top: 10px;
+      font-weight: bold;
+      
+    }
+ fieldset {
+      margin-right:500px;
+      border: 1px solid;
+      padding: 20px 10px;
+      border-radius: 8px;
+    }
+
+    button{
+      color: white;
+      background: #ee9a25;
+      padding: 9px 25px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+</style>
+<script>
+function validate()
+{
+var name = document.getElementById("nam").value;
+var passwd = document.getElementById("pwd").value;
+var phone = document.getElementById("pno").value;
+if(name== "")
+{
+alert('Name cannot be blank');
+return false;
+}
+else if(!isNaN(name))
+{
+alert('Name required alphabets!');
+return false;
+}
+else if(passwd == "")
+{ alert('Enter a Password');
+ return false;
+}
+ 
+else if(passwd.length<8)
+{
+ alert('Password required atleast 8 characters');
+ return false;
+}
+else if(phone=="")
+{
+alert('Enter your phone number!');
+return false;
+}
+else if(isNaN(phone))
+{
+ alert('Invalid Phone Number');
+ return false;
+}
+else if(phone.length !=10)
+{
+   alert('Not a Valid Phone Number (need 10 digits)');
+    return false;
+}
+else
+{
+alert('Thank You for Registration');
+return true;
+}
+}
+</script>
+</head>
+<body bgcolor="lavender">
+<h2><center>Form Validation</h2></center>
+<br><br>
+<br>
+<form style="width:900px; position:relative; left:500;" onsubmit="validate()"/>
+  <fieldset>
+<label>Name : </label> <input type="text" id="nam"><br><br>
+<label>Password:</label> <input type="password" id = "pwd"><br></br>
+<label>PhoneNumber:</label> <input type="text" id="pno"><br><br>
+<center><button type="submit">Submit</button></center>
+</form>
+</body>
+</html>
