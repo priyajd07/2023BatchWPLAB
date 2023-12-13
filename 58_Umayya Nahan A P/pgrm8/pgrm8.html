@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Program 8</title>
+	<style>
+		body{text-align:center;
+			padding-top: 50px;
+		}
+		label{
+			display:inline-block;
+			width:200px;
+			text-align:left;
+		}
+</style>
+</head>
+<body>
+	<form><h2>REGISTRATION FORM</h2>
+	
+	<label for="name">Name</label>
+	<input type="text" id="name"><br><br>
+	<label>Phone</label>
+        <input type="text" id="phone">  <br><br> 
+	<label>Password</label> 
+	<input type="text" id="password"><br><br>                 
+	<button onclick="validate()">Submit</button>
+	</form>
+
+	<script>
+		function validate()
+		{
+			var name=document.getElementById("name").value;
+			var phone=document.getElementById("phone").value;
+			var password=document.getElementById("password").value;
+			if(name=="")
+			{
+				alert("Enter the name");
+				
+
+			}
+			else if(!isNaN(name))
+			{
+				alert("Enter a valid name");
+                return false;
+			}
+			else if(phone=="")
+			{
+				alert("Enter the phone number");
+                return false;
+			}
+			else if(isNaN(phone))
+			{
+				alert("Enter valid number");
+                return false;
+			}
+			else if(phone.length!=10)
+			{
+				alert("Enter valid number");
+                return false;
+			}
+			else if(password=="")
+			{
+				alert("Enter the password");
+                return false;
+			}
+			else if(password.length!=8)
+			{
+				alert("Enter valid password");
+                return false;
+			}
+			else
+			{
+				alert("Registration completed");
+			}
+			
+		}
+	</script>
+</body>
+</html>
