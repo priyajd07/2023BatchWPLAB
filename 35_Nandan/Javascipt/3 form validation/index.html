@@ -13,11 +13,11 @@
 
 			
 			<label>Mobile :</label> 
-			<input type="tel" id="Mob" class="elements"/>
+			<input type="tel" id="Mob" class="elements"/><br>
 
 			
 			<label>Password : </label> 
-			<input type="password" id="Pass" class="elements"/><br>
+			<input type="password" id="Pass" class="elements"/>
 			</fieldset>
 			
 			<div class="elements">
@@ -40,12 +40,12 @@
 				if(name=="")
 				{
 					
-					alert("Type Name !!")
+					alert("Username Can't be empty !!")
 					return(false)
 				}
 				else if(!(isNaN(name))	)
 				{
-					alert("Type Charecter !!")
+					alert("Type Alphanumeric Charecter in username field !!")
 					return(false)
 					
 				}
@@ -53,18 +53,18 @@
 				if(Mob == "")
 				{
 					
-					alert("Enter the Phone number !!")
+					alert("Phone number filed can't be empty !!")
 					return(false)
 				}
 				else if(isNaN(Mob))
 				{
-					alert("Type Number In Number Field !!")
+					alert("Type Numeric charecter In Number Field !!")
 					return(false)
 					
 				}
 				else if(Mob.length != 10	)
 				{
-					alert("Enter 10 digit number !!")
+					alert("phone number must contain 10 digit !!")
 					return(false)
 					
 				}
@@ -77,7 +77,7 @@
 				}
 				else if(pass.length <8 	)
 				{
-					alert("Password must contain 8 numbers")
+					alert("Password must contain atleast 8 numbers")
 					return(false)
 					
 				}
