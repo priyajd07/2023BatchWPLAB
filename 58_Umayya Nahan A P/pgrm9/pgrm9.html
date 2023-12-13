@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>Program 9</title>
+    <style>
+        body{
+        text-align: center;
+        padding-top: 150px;
+        }
+        img{max-width: 250px;
+            max-height: 250px;
+            border-radius:50%; border:4px solid green;
+            padding:8px;}
+        p{font-size: 20px;}    
+    </style>
+</head>
+<body> 
+    <img src="rose1.jpeg" id="image" onmouseover="one()" onmouseout="two()">
+    <p id="p1">
+    </p>
+    <script>
+        function one()
+        {
+            document.getElementById("image").src="rose2.jpeg";
+            document.getElementById("p1").innerHTML="onmouseover";
+            document.getElementById("p1").style.color= "blue";
+        }
+        function two()
+        {
+            document.getElementById("image").src="rose3.jpeg";
+            document.getElementById("p1").innerHTML="onmouseout";
+            document.getElementById("p1").style.color= "red";
+        }
+    </script>
+</body>
+</html>
