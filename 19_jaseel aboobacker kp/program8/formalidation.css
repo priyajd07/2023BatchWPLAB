@@ -1,0 +1,23 @@
+body {
+ background-color:#88aabb;
+}
+fieldset {
+	background-color:green;
+	position: absolute;
+	left:5px;
+		
+}
+label{
+	font-size:15px;
+	text-align:center;
+}
+button.d {
+  border: none;
+  color: green;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius:40px;
+  font-size: 16px;
+}
