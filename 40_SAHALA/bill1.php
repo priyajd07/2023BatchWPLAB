@@ -14,7 +14,7 @@ if(isset($_POST['unit-submit'])){
 $units=$_POST['units'];
 if(!empty($units)){
 	$result=calculate_bill($units);
-	$result_str='<h2>Total amount of'.$units.'-'.$result."</h2>";
+	$result_str='<h2>Total amount for  '. $units." unit is  ".$result."  rupees</h2>";
 	echo $result_str;
 	}
 }
@@ -30,6 +30,10 @@ function calculate_bill($units){
 		$temp=50*$unit_cost_first;
 		$remaing_units=$units-50;
 		$bill=$temp+($remaining_units*$unit_cost_second);}
+
+
+
+
 else if($units > 50 && $units <=100)
 {
 $temp=50* $unit_cost_first;
@@ -51,4 +55,3 @@ else{
 }
 ?>
 </html>
-		
