@@ -53,7 +53,7 @@ function calculate_bill($units)
 	else
 	{
 		$temp=(50*3.5)+(100*$unit_cost_second)+(100*$unit_cost_third);
-		$remaining_units=$unit-250;
+		$remaining_units=$units-250;
 		$bill=$temp+($remaining_units*$unit_cost_fourth);
 	}
 	return number_format((float)$bill, 2, '.', '');
