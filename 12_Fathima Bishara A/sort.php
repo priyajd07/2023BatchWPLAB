@@ -1,5 +1,5 @@
 <?php 
-$student=array("sum"=>"sumina","ham"=>"hamna","the"=>"theertha","bis"=>"bishara","jil"=>"jilsina","sin"=>"siniya");
+$student=array("pra"=>"pranav","rin"=>"rinu","rah"=>"rahul","adi"=>"adulya","fid"=>"fidha");
 echo "<h3>Student name string</h3>";
 print_r($student);
 echo "<br>";
