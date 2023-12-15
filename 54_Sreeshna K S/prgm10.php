@@ -1,5 +1,5 @@
 <html>
-<head>
+<body bgcolor="Silver ">
 <?php
 $students = array("minnu"=>"Sreeshna","ponnu"=>"Gopika", "unnimol"=>"Shabana","unnimol"=>"Shamla","safu"=>"Safa");
 echo "<h1>students name sorting</h1>";
