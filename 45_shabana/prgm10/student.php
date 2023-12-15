@@ -5,11 +5,11 @@ $students = array("minnu"=>"sreeshna", "ponnu"=>"gopika", "unnimol"=>"shabana","
 echo "<h1>students name sorting</h1>";
 print_r($students);
 echo"<br>";
-echo"array sorted using asort:<br>";
+echo"<h2>array sorted using asort:</h2><br>";
 asort($students);
 print_r($students);
 echo"<br>";
-echo"array sorted using arsort:<br>";
+echo"<h2>array sorted using arsort:</h2><br>";
 arsort($students);
 print_r($students);
 
