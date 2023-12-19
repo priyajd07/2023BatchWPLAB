@@ -54,8 +54,8 @@ $phonenoError="invalid phone number";
 function test_input($data)
 {
 $data=trim($data);
-$data=striplashes($data);
-$data=htmlspecialchar($data);
+$data=stripslashes($data);
+$data=htmlspecialchars($data);
 return $data;
 }
 ?>
