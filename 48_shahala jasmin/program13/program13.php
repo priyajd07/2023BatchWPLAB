@@ -69,6 +69,31 @@ color:red}
 .radio{
 width:15px;
 height:15px;
+}
+textarea {
+		width: 250px;
+		height 60px;
+		border-radius: 1px;
+		margin-top: 10px;
+		padding: 5px;
+		border: none;	
+	}
+.input  {
+		width: 300px;
+		height: 25px;
+		border-radius: 1px;
+		margin-top: 10px;
+		padding: 5px;
+		border: none;
+		margin-bottom:20px;
+	}
+form    {
+     		margin: auto;
+		width: 440px;
+		border: 1px dashed #ccc;
+		padding: 10px 30px 40px;
+		background-color: #a0f8ee;
+	}
 </style>
 <body>
 <h2 align="center">FORM VALIDATION WITH PHP</h2>
@@ -95,7 +120,7 @@ Phone:
 </form>
 
 <?php
-echo"<h2>your input</h2>";
+echo"<h2>YOUR INPUT</h2>";
 echo $name;
 echo"<br>";
 echo $email;
